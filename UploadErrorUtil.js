@@ -1,8 +1,8 @@
 /*
  * @Date: 2022-04-27 15:17:47
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-28 10:54:53
- * @FilePath: /vue-sample/UploadErrorUtil.js
+ * @LastEditTime: 2022-05-23 14:01:17
+ * @FilePath: /student/vue-sample/UploadErrorUtil.js
  */
 let isLoad = false
 export function uploadError(params) {
@@ -59,8 +59,8 @@ const _init = () => {
 		uploadError(e)
 	});
 	window.addEventListener("unload", () => {
-		window.removeEventListener('error')
-		window.removeEventListener('unhandledrejection')
+		// window.removeEventListener('error')
+		// window.removeEventListener('unhandledrejection')
 	});
 }
 

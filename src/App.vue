@@ -1,8 +1,8 @@
 <!--
  * @Date: 2022-02-16 14:36:24
  * @LastEditors: 赵聪
- * @LastEditTime: 2022-04-27 15:26:49
- * @FilePath: /vue-sample/src/App.vue
+ * @LastEditTime: 2022-05-23 14:06:02
+ * @FilePath: /student/vue-sample/src/App.vue
 -->
 <template>
   <img
@@ -19,9 +19,10 @@ export default {
     HelloWorld,
   },
   mounted() {
+    abc();
     const asyncFunc = () =>
       new Promise((resolve) => {
-        abc();
+        
       });
     asyncFunc();
    
