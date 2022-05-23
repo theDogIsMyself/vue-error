@@ -1,17 +1,33 @@
+<!--
+ * @Date: 2022-02-16 14:36:24
+ * @LastEditors: 赵聪
+ * @LastEditTime: 2022-04-27 15:26:49
+ * @FilePath: /vue-sample/src/App.vue
+-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img
+    alt="Vue logo"
+    src="./assets/logo.png"
+  >
+  <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HelloWorld from "./components/HelloWorld.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+  mounted() {
+    const asyncFunc = () =>
+      new Promise((resolve) => {
+        abc();
+      });
+    asyncFunc();
+   
+    
+  },
+};
 </script>
 
 <style>
